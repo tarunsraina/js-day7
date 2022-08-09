@@ -1,0 +1,30 @@
+
+<head>
+    <link rel="stylesheet" href="./styles/styles.css" />  
+</head>
+<h1>Please enter delivery details!</h1>
+<center>
+<input id="house-no" type="text" placeholder="House no" required>
+<br>
+<input id="floor" type="text" placeholder="Floor(optional)">
+<br>
+<input id="street" type="text" placeholder="Street" required>
+<br>
+<input id="mobile" type="text" placeholder="Mobile" required>
+<br>
+<input id="pincode" type="text" placeholder="Pincode" required>
+<br>
+<input id="landmark" type="text" placeholder="Landmark(optional)">
+<br>
+<br>
+<input type="button" value="Deliver now!" onClick="deliverNow()">
+
+<h1 id="confirm-address"></h1>
+</center>
+
+<script>
+function deliverNow() {
+    let address = String(document.getElementById("house-no").value) +", Floor number "+ String(document.getElementById("floor").value) +"  "+ String(document.getElementById("street").value)+" - "+String(document.getElementById("pincode").value)+" Mobile - "+String(document.getElementById("mobile").value);
+    document.getElementById("confirm-address").innerText ="Your order will be delivered here :" +address;
+}
+</script>

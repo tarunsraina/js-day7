@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Food delivery app</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+
+    <div id="top-left">
+    <a href="aboutus.html">About Us!</a>
+    <br>
+    <br>
+    <a href="contactus.html">Contact Us!</a>
+    </div>
+
+    <div>
+        <input type="button" id="login-button" value="Login" onClick="getLoginPage()" />
+    </div>
+    <script>
+        function getLoginPage(){
+            window.location.href = 'login.html';
+        }
+
+        function getOrderPage(){
+            window.location.href = 'orderspage.html';
+        }
+    </script>
+
+    <center>
+    <img src="https://cdn-icons-png.flaticon.com/128/738/738000.png" alt="logo" />
+    </center>
+    <br>
+    <center>
+
+    <h1>Food Delivery App</h1>
+    
+    <h2>Explore food in your City!</h2>
+
+        <input type="button" value="Banglore" onClick="getOrderPage()"/>
+        <br>
+        <br>
+        <input type="button" value="Mysore" onClick="getOrderPage()"/>
+        <br>
+        <br>
+        <input type="button" value="Hyderabad" onClick="getOrderPage()"/>
+        <br>
+    <br>
+
+        <img src="https://cdn-icons.flaticon.com/png/128/562/premium/562678.png?token=exp=1660045052~hmac=89f5fe48e58fb0f3736e79a7b448f546" width="20%">
+
+
+    </center>
+    
+</body>
+</html>

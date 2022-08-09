@@ -1,0 +1,207 @@
+<center>
+<h1>Order here!</h1>
+</center>
+
+<head>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+</head>
+
+<center>
+<tr>
+<img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png" alt="burger" width="18%" >
+<br>
+<h5>Burger from burger Lounge</h5>
+<h6>Price : 180.00</h6>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<h5>Flat round mass of minced meat or vegetables, which is fried and often eaten in a bread roll.</h5>
+<input id="burger" type="text" placeholder="quantity" value="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</tr>
+<br>
+<br>
+
+<hr>
+
+<tr>
+    <img src="https://cdn-icons-png.flaticon.com/128/2094/2094661.png" alt="pizza" width="18%">
+    <br>
+    <h5>Pizza from pizza hut</h5>
+    <h6>Price : 240.00</h6>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <h5>Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes and Cheese</h5>
+    <input type="text" id="pizza" placeholder="quantity" value="">
+    
+    </tr>
+    <br>
+    <br>
+
+<hr>
+
+    <tr>
+        <img src="https://cdn-icons.flaticon.com/png/128/4127/premium/4127288.png?token=exp=1660034146~hmac=7f25fef9c50efc5f42fd2a47c6a8316d" alt="pasta" width="18%">
+        <br>
+        <h5>Pasta from shenroi restuarant</h5>
+        <h6>Price : 120.00</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5>Classic Italian style pasta with white sauce</h5>
+        <input id="pasta" type="text" placeholder="quantity" value="">
+        
+    </tr>
+
+    <br>
+    <br>
+
+<hr>
+
+
+    <tr>
+        <img src="https://cdn-icons-png.flaticon.com/128/3496/3496528.png" alt="Donut" width="18%">
+        <br>
+        <h5>Donut from shangrilla restuarant</h5>
+        <h6>Price : 90.00</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5>Classic american style donut</h5>
+        <input id="donut" type="text" placeholder="quantity" value="">
+        
+    </tr>
+
+
+    <br>
+    <br>
+
+<hr>
+
+
+    <tr>
+        <img src="https://cdn-icons-png.flaticon.com/128/2718/2718224.png" alt="Ramen" width="18%">
+        <h5>Ramen from chinese corner</h5>
+        <h6>Price : 300.00</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <h5>Classic Japanese style ramen</h5>
+        <input type="text" id="ramen" placeholder="quantity" value="">
+        
+    </tr>
+
+
+    <br>
+    <br>
+
+    <hr>
+
+    <tr>
+        <img src="https://cdn-icons-png.flaticon.com/128/1037/1037855.png" alt="Burger combo" width="18%">
+        <h5>Burger combo from burger king</h5>
+        <h6>Price : 210.00</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <h5>Delicious combo includes burger,potatoe fries and a drink</h5>
+        <input type="text" id="burger-combo" placeholder="quantity" value="">
+        
+    </tr>
+
+    <br>
+    <br>
+
+    
+
+    <hr>
+
+    <tr>
+        <img src="https://cdn-icons-png.flaticon.com/128/2738/2738730.png" alt="Apple juice" width="18%">
+        <h5>Apple juice from cool corner</h5>
+        <h6>Price : 80.00</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5>Delicious fresh apple juice</h5>
+        <input type="text" id="apple-juice" placeholder="quantity" value="">
+        
+    </tr>
+
+    <br>
+    <br>
+
+
+    <input type="button" value="Place order!" onClick="placeOrder()"/>
+<br>
+<br>
+    <button id="checkout-button" type="button" onClick="getCheckOutPage()" disabled>CheckOut</button>
+
+
+    <h1 id="total-quan"></h1>
+    <h1 id="total-amount"></h1>
+
+    <br>
+    <br>
+    <h2 id="check-out-msg"></h1>
+
+</center>
+
+
+<script>
+
+    function getCheckOutPage(){
+        window.location.href='checkout.html'
+    }
+
+    function placeOrder(){
+
+        let totalBurgers = Number(document.getElementById("burger").value);
+        let totalPizza = Number(document.getElementById("pizza").value);
+        let totalPasta = Number(document.getElementById("pasta").value);
+        let totalDonut = Number(document.getElementById("donut").value);
+        let totalRamen = Number(document.getElementById("ramen").value);
+        let totalBurgerCombo = Number(document.getElementById("burger-combo").value);
+        let totalAppleJuice = Number(document.getElementById("apple-juice").value);
+        let totalQuantity = totalBurgers + totalPizza + totalPasta + totalDonut + totalRamen + totalBurgerCombo + totalAppleJuice;
+        console.log("Total orders :"+totalQuantity);
+
+        let prices = [180,240,120,90,300,210,80];
+
+        let totalPrice = (totalBurgers*prices[0]) + (totalPizza*prices[1]) + (totalPasta*prices[2]) + (totalDonut*prices[3]) + (totalRamen*prices[4]) + (totalBurgerCombo*prices[5]) + (totalAppleJuice*prices[6]);
+        console.log("Total price ="+totalPrice);
+
+        document.getElementById("total-quan").innerText = "You have ordered "+totalQuantity+" items!";
+        document.getElementById("total-amount").innerText = "Total amount to be paid :"+ totalPrice;
+
+        document.getElementById("checkout-button").disabled = false;
+
+        document.getElementById("check-out-msg").innerText = "Please press checkout for confirmation."
+
+
+
+
+    }
+    
+ 
+</script>

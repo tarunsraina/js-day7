@@ -1,0 +1,137 @@
+h1{
+
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 0rem;
+        background-color: brown;
+        color: azure;
+    
+}
+
+#login-button{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: radius 0;
+    size: 0rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 2rem;
+    color: #000;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+}
+
+input[type=text],textarea{
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+
+input[type=button], input[type=submit] {
+    position: relative;
+    
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: radius 0;
+    size: 0rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 2rem;
+    color: #000;
+    letter-spacing: 0;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+  }
+
+ul{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#top-left{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: red;
+    font-weight: 700;
+    background-color: white;
+}
+
+body {
+    
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+  }
+
+
+  .colm-form {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+#text-field-area {
+    background-color: #ffffff;
+    border: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.checked {
+    color: orange;
+  }
+
+
+
+
+
+
+
+
